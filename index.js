@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const porta = 4005;
+const porta = process.env.PORT || 4005;
 const database = require("./src/database/database.js");
 const cors = require('cors')
 
